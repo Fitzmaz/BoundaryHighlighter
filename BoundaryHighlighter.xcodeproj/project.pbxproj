@@ -11,6 +11,7 @@
 		1D7508742CFFEE3D00057D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7508732CFFEE3D00057D03 /* ContentView.swift */; };
 		1D7508762CFFEE3F00057D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7508752CFFEE3F00057D03 /* Assets.xcassets */; };
 		1D7508792CFFEE3F00057D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7508782CFFEE3F00057D03 /* Preview Assets.xcassets */; };
+		1D7508822CFFF0A200057D03 /* BoundaryHighlighterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7508812CFFF0A200057D03 /* BoundaryHighlighterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1D7508752CFFEE3F00057D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7508782CFFEE3F00057D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D75087A2CFFEE3F00057D03 /* BoundaryHighlighter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoundaryHighlighter.entitlements; sourceTree = "<group>"; };
+		1D7508812CFFF0A200057D03 /* BoundaryHighlighterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryHighlighterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				1D7508712CFFEE3D00057D03 /* BoundaryHighlighterApp.swift */,
 				1D7508732CFFEE3D00057D03 /* ContentView.swift */,
+				1D7508812CFFF0A200057D03 /* BoundaryHighlighterManager.swift */,
 				1D7508752CFFEE3F00057D03 /* Assets.xcassets */,
 				1D75087A2CFFEE3F00057D03 /* BoundaryHighlighter.entitlements */,
 				1D7508772CFFEE3F00057D03 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				1D7508742CFFEE3D00057D03 /* ContentView.swift in Sources */,
 				1D7508722CFFEE3D00057D03 /* BoundaryHighlighterApp.swift in Sources */,
+				1D7508822CFFF0A200057D03 /* BoundaryHighlighterManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

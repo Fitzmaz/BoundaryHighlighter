@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct BoundaryHighlighterApp: App {
+    init() {
+        BoundaryHighlighterManager.shared.setup()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
