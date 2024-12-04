@@ -11,10 +11,24 @@ import CoreGraphics
 class BoundaryHighlighterManager {
     static let shared = BoundaryHighlighterManager()
     private var hintWindows: [CGDirectDisplayID: NSWindow] = [:]
-
-    func setup() {
+    
+    var isEnabled: Bool {
+        get {
+            return hintWindows.count > 0
+        }
+    }
+    
+    func enable() {
         CGDisplayRegisterReconfigurationCallback(displayReconfigurationCallback, nil)
         setupDisplays()
+    }
+    
+    func disable() {
+        CGDisplayRemoveReconfigurationCallback(displayReconfigurationCallback, nil)
+        for (_, window) in hintWindows {
+            window.orderOut(nil)
+        }
+        hintWindows.removeAll()
     }
     
     private let displayReconfigurationCallback: CGDisplayReconfigurationCallBack = { (displayID, flags, userInfo) in

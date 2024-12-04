@@ -9,12 +9,18 @@ import SwiftUI
 
 @main
 struct BoundaryHighlighterApp: App {
+    private var statusBarController = StatusBarController()
+    
     init() {
-        BoundaryHighlighterManager.shared.setup()
+        BoundaryHighlighterManager.shared.enable()
     }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    statusBarController.createStatusBarItem()
+                }
         }
     }
 }
